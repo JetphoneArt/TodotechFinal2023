@@ -1,0 +1,820 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgba(240, 248, 255, 0.822);
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+
+    }
+}
+
+body {
+    background-color: black;
+    animation-name: entrada;
+    animation-duration: 2s;
+    
+}
+
+/* Header y nav */
+
+header {
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    /* overflow: hidden; */
+    
+}
+
+#logo {
+    background: url(imagenes/logos/logott.png) no-repeat center;
+    width: 288px;
+    height: 90px;
+    padding: 0;
+    font-size: 0;
+    position: absolute;
+    left: 15%;
+    top: -3px;
+    
+}
+
+#logo:hover{
+    scale: 120%;
+    transition: all 0.3s 100ms ease;
+}
+
+nav{
+    width: 100%;
+}
+nav ul {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav ul li {
+    width: 85%;
+    margin: 0.8rem auto;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #3425dc;
+    border-radius: 2rem;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    text-align: center;
+    
+}
+/* nav ul li a:hover{
+    scale: 120%;
+
+} */
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+/* Fin de header y nav */
+/* Banner */
+
+.banner {
+    height: 50px;
+    width: 100%;
+    
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+main {
+    padding-top: 0.5rem;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main div {
+    text-align: center;
+}
+
+/* Fin del banner */
+/* Nosotros */
+
+#nosotros {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    
+}
+
+#nosotros h2 {
+    color: #00ff29;
+    margin: 0 0 2rem;
+}
+
+#nosotros p {
+    text-align: left;
+}
+
+#encelu {
+    width: 100%;
+    align-content: center;
+    
+}
+
+#somos {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#hacemos {
+    margin-top: 1.5rem;
+}
+
+#enpc {
+    display: none;
+}
+
+/* Fin de Nosotros */
+/* Reviews */
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    border-top: #00ff29 0.02rem solid;
+    border-bottom: #00ff29 0.02rem solid;
+    
+}
+
+#reviews p {
+    width: auto;
+    height: auto;
+    color: #00ff29;
+    background-color: black;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+    border: #00ff29 0.02rem solid;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+/* Fin de reviews */
+/* Características */
+
+#caracteristicas {
+    background-color: #3425dc;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    /* padding: 20px; */
+    /* height: auto; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+#caracteristicas div {
+    border: white 0.02rem solid;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: auto;
+    
+}
+
+.envio-p {
+    background: url(imagenes/caract/envio_mob.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    margin: auto;
+}
+
+.cuotas-p {
+    background: url(imagenes/caract/cuotas_mob.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    margin: auto;
+}
+
+.rapido-p {
+    background: url(imagenes/caract/envio2_mob.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    margin: auto;
+}
+
+.devolucion-p {
+    background: url(imagenes/caract/soporte_mob.png) no-repeat center;
+    width: 50px;
+    height: 50px;
+    font-size: 0px;
+    margin: auto;
+}
+
+/* Fin de características */
+/* Carrusel */
+
+#destacados {
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+#destacados h2 {
+    margin: auto;
+    padding: 2rem 0 0 0;
+    color: #00ff29;
+
+}
+
+#destacados figure {
+    /* max-width: 1000px; */
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+
+#destacados img {
+    max-width: 100%;
+}
+
+/* Fin de carrusel */
+/* Galería */
+
+#galeria2 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    
+}
+#galeria2 img:hover{
+    scale: 120%;
+    transition: all 0.3s 100ms ease;
+}
+
+#galeria2 h2 {
+    color: white;
+    line-height: 3rem;
+    margin: 2rem;
+    color: #00ff29;
+}
+
+/* Fin de galería */
+/* Video */
+
+#trailer {
+    background-color: black;
+    padding: 2rem;
+    margin: auto;
+    max-width: 1300px;
+    
+}
+
+#trailer h2 {
+    color: #00ff29;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#video {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+
+
+/* Fin del video */
+/* Footer */
+
+footer {
+    background-color: #3425dc;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.foot {
+    /* height: auto; */
+    /* border: white 0.05rem solid; */
+    width: 95%;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    
+    
+}
+
+.enlaces {
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    overflow: hidden;
+
+}
+.enlaces a{
+    text-decoration: none;
+}
+.enlaces img:hover{
+    scale: 120%;
+    /* background-color: #00ff29; */
+    transition: all 0.3s 100ms ease;
+}
+
+.foot h3 {
+    padding-bottom: 0.5rem;
+}
+
+.foot p {
+    font-size: 0.8rem;
+    /* text-align: left; */
+    padding-bottom: 1rem;
+}
+
+
+form {
+    /* width: 90vw; */
+    padding: 15px;
+    border-radius: 10px;
+    /* margin: auto; */
+    /* background-color: rgb(0, 0, 0); */
+    border: 0.02rem solid white;
+    margin-bottom: 1rem;
+    
+}
+
+.control {
+    display: flex;
+    margin: .5em 0;
+    
+}
+
+.control:first-child,
+.control:nth-child(2) {
+    align-items: center;
+}
+
+.control label {
+    flex: 0 100px;
+    
+}
+
+.control input,
+.control textarea,
+.control select,
+.control>div {
+    flex: 1;
+    padding: .3rem .5rem;
+    
+}
+
+.control div div {
+    margin: .3em 0;
+}
+
+form>div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 0 0 0;
+    
+}
+input[type="text"] {
+    color: black;
+}
+input[type="email"] {
+    color: black;
+}
+input[type="submit"] {
+    padding: .4rem 1.3rem;
+    background-color: #00ff29;
+    color: rgb(0, 0, 0);
+    border: 1px solid #aaa;
+}
+
+input[type="reset"] {
+    padding: .4rem 1rem;
+    color: black;
+    background-color: white;
+    border: 1px solid #aaa;
+    margin-right: .3em;
+}
+input:hover{
+    background-color: black;
+    color: white;
+}
+/* Fin del footer */
+/* Media queries */
+
+@media screen and (max-width: 556px) {
+    
+    @keyframes entrada{
+            0% {
+                opacity: 0;
+                transform: translate(0, 40px);
+            }
+        
+            100% {
+                opacity: 1;
+                transform: translate(0px, 0px);
+        
+            }
+    }
+    body{
+        animation-duration: 1.4s;
+    }
+
+    h1 {
+        line-height: 4rem;
+    }
+
+    nav {
+        align-items: flex-end;
+    }
+
+    #menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+
+    #burger li {
+        width: 2.5em;
+        list-style: none;
+        text-indent: -800px;
+        overflow: hidden;
+        margin: 0.5em;
+    }
+
+    #burger li a {
+        display: block;
+        height: auto;
+        background: url(imagenes/nav/img_menu_verde.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #barra {
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        top: 4rem;
+        left: 0;
+        height: 0;
+        transition: all 500ms;
+        overflow: hidden;
+    }
+
+    #burger li:last-child {
+        display: none;
+    }
+
+    nav:target #barra {
+        height: calc(100vh - 4rem);
+    }
+
+    nav:target #burger li a {
+        background: url(imagenes/nav/img_cierre_verde.png);
+        background-size: cover;
+    }
+
+    nav:target #burger li:first-child {
+        display: none;
+    }
+
+    nav:target #burger li:last-child {
+        display: block;
+    }
+
+    figure {
+        width: 100%;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 557px) and (max-width: 991px) {
+
+    header,
+    section,
+    footer {
+        width: 100%;
+        margin: auto;
+    }
+    body{
+        animation-duration: 1.4s;
+    }
+    @keyframes entrada{
+        0% {
+            opacity: 0;
+            transform: translate(0, 40px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translate(0px, 0px);
+    
+        }
+}
+
+    header {
+        height: auto;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    nav {
+        padding: 0 1rem 1rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 1%;
+        width: 18%;
+        text-align: center;
+    }
+
+    .columna {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #logo {
+        font-size: 0;
+        background: url(imagenes/logos/logott.png) no-repeat 0;
+        position: relative;
+        left: 30%;
+        text-align: center;
+    }
+
+    .envio-p {
+        background: url(imagenes/caract/envio_tab.png) no-repeat center;
+        width: 80px;
+        height: 80px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .cuotas-p {
+        background: url(imagenes/caract/cuotas_tab.png) no-repeat center;
+        width: 80px;
+        height: 80px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .rapido-p {
+        background: url(imagenes/caract/envio2_tab.png) no-repeat center;
+        width: 80px;
+        height: 80px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .devolucion-p {
+        background: url(imagenes/caract/soporte_tab.png) no-repeat center;
+        width: 80px;
+        height: 80px;
+        font-size: 0px;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    header,
+    section,
+    footer {
+        /* max-width: 1300px; */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header {
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+
+    h1 {
+        padding-left: 1rem;
+        display: inline-block;
+        vertical-align: center;
+    }
+
+    #logo {
+        left: 0;
+    }
+
+    #burger {
+        display: none
+    }
+
+    nav {
+        flex: 1;
+        align-self: center;
+        background: none;
+        justify-content: flex-end;
+    }
+
+    #barra {
+        position: static;
+        height: auto;
+        text-align: center;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 1rem;
+    }
+
+    #barra li {
+        width: 100px;
+        margin: 0 5px;
+        text-align: center;
+    }
+
+    #barra li a:hover {
+        background-color: rgb(0, 255, 0);
+        color: black;
+    }
+
+    .columna {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    #nosotros {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    #enpc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        justify-content: space-around;
+    }
+
+    #enpc p {
+        border-radius: 2rem;
+        width: 45%;
+        padding: 1.5rem;
+        /* border: 0.02rem solid white; */
+        margin: 1rem;
+        background-color: #3425dc;
+        /* text-align: center; */
+    }
+
+    #reviews {
+        /* max-width: 1000px; */
+        margin: auto;
+        /*  border-bottom: 0.02rem solid #00ff29; */
+    }
+
+    #reviews p {
+        width: 1000px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .review2 {
+        margin-top: 1rem !important;
+    }
+
+    #caracteristicas {
+        background-color: #3425dc;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        /* padding: 20px; */
+        /* height: auto; */
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    .envio-p {
+        background: url(imagenes/caract/envio.png) no-repeat center;
+        width: 100px;
+        height: 100px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .cuotas-p {
+        background: url(imagenes/caract/cuotas.png) no-repeat center;
+        width: 100px;
+        height: 100px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .rapido-p {
+        background: url(imagenes/caract/envio2.png) no-repeat center;
+        width: 100px;
+        height: 100px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .devolucion-p {
+        background: url(imagenes/caract/soporte.png) no-repeat center;
+        width: 100px;
+        height: 100px;
+        font-size: 0px;
+        margin: auto;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+        align-items: center;
+    }
+
+    aside {
+        width: 40vw;
+    }
+
+    .bajada {
+        width: 25%;
+        text-align: left;
+    }
+
+    /* .enlaces {
+        justify-content: center;
+    } */
+
+}
+
+
+/* Fin de media queries */

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fotorama/fotorama.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&ampdisplay=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ysz2bvz.css">
+    <title>Bicais Martire Joaquín y Martinez Alvarez Sol - DGT4BV - Turno Tarde - 2023</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo"> TodoTech</h1>
+        </a>
+        <nav id="menu">
+            <ul id="burger">
+                <li><a href="#menu">Abrir</a></li>
+                <li><a href="#">Cerrar</a></li>
+            </ul>
+
+            <ul id="barra">
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#destacados">Destacados</a></li>
+                <li><a href="#caracteristicas">Beneficios</a></li>
+                <li><a href="#galeria2">Categorías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <figure>
+            <picture class="banner">
+                <source media="(max-width: 556px)" srcset="imagenes/banner/banner-mob.jpg">
+                <source media="(max-width: 991px)" srcset="imagenes/banner/banner-tablet.jpg">
+                <img src="imagenes/banner/banner-pc.jpg" alt="foto mobile">
+            </picture>
+        </figure>
+
+    </main>
+
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <div id="encelu">
+            <p id="somos"> Somos TodoTech, tus aliados tecnológicos. Certificados por Mercado Libre por nuestro buen
+                servicio y trayectoria dentro del sitio. Compra seguro.</p>
+            <p id="hacemos">Somos una empresa mayorista en el área de la informática, con 23 años de experiencia en el
+                mercado, somos los mejores brindando calidad y servicio a todos nuestros clientes, antes, durante y
+                después de la compra, para nosotros es primero la fidelización del cliente.</p>
+            <p>Todos nuestros productos cuentan con garantía oficial conservando su blister (caja original) completo tal
+                cual fue recibido. Somos reseller oficial de marcas líderes como KINGSTON, ASUS, GIGABYTE, INTEL, AMD,
+                MSI, LG, WESTER DIGITAL, HEWLETT PACKARD, SAMSUNG Y MÁS.</p>
+            <p>Aceptamos Mercado Pago. La compra por Mercado libre se paga a través de Mercado pago con tarjeta de
+                crédito, efectivo con rapipago y pago fácil o con dinero en tu cuenta de Mercado pago.</p>
+        </div>
+        <div id="enpc">
+            <p>Nuestro horario de atención es de lunes a viernes 9:00 a 17:30hs. Los sábados de 9:00 a 12:30. Domingos y
+                feriados cerrado.</p>
+            <p>Hacemos factura A y B.
+                No olvide avisar por mensaje privado al terminar la compra que tipo de factura necesita</p>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <p>"Wow ese auricular cambio mi vida!" ★★★★☆- IGN</p>
+        <p class="review2">"Por fin un monitor que arranca" ★★★★☆</p>
+    </section>
+
+    <section id="destacados">
+        <h2>Destacados</h2>
+        <figure class="fotorama" data-max-width="100%" data-margin="50" data-autoplay="true">
+            <picture>
+                <source media="(max-width:991px)" srcset="imagenes/carrusel/uno_tab.jpg">
+                <source media="(min-width:992px)" srcset="imagenes/carrusel/uno_pc.jpg">
+                <img src="imagenes/carrusel/uno.jpg" alt="foto" data-caption="Título de la foto">
+            </picture>
+            <picture>
+                <source media="(max-width:991px)" srcset="imagenes/carrusel/dos_tab.jpg">
+                <source media="(min-width:992px)" srcset="imagenes/carrusel/dos_pc.jpg">
+                <img src="imagenes/carrusel/dos.jpg" alt="foto" data-caption="Título de la foto">
+            </picture>
+            <picture>
+                <source media="(max-width:991px)" srcset="imagenes/carrusel/tres_tab.jpg">
+                <source media="(min-width:992px)" srcset="imagenes/carrusel/tres_pc.jpg">
+                <img src="imagenes/carrusel/tres.jpg" alt="foto" data-caption="Título de la foto">
+            </picture>
+        </figure>
+    </section>
+
+    <div id="caracteristicas">
+        <div class="envio">
+            <p class="envio-p">Ícono envío</p>
+            <p>Envío gratis a toda la provincia de Buenos Aires</p>
+        </div>
+        <div class="cuotas">
+            <p class="cuotas-p">Ícono cuotas</p>
+            <p>6 cuotas sin interés</p>
+        </div>
+        <div class="rapido">
+            <p class="rapido-p">Ícono rápidos</p>
+            <p>Los envíos mas rápidos del país</p>
+        </div>
+        <div class="devolucion">
+            <p class="devolucion-p">Ícono devolución</p>
+            <p>Devolvé tu compra hasta por 30 días</p>
+        </div>
+    </div>
+
+    <section id="galeria2">
+        <h2>Categorías de Productos</h2>
+        <figure>
+            <div>
+                <a href="imagenes/galeria/razermouse.jpg"
+                    data-srcset="imagenes/galeria/razermouse_mob.jpg 576w, imagenes/razermouse_tab.jpg 990w,  imagenes/galeria/razermouse.jpg 1600w"
+                    data-fancybox="galeria"><img src="imagenes/galeria/razermouse_mob.jpg" alt="Mouse Razer"> </a>
+                <a href="imagenes/galeria/parlanterazer.jpg"
+                    data-srcset="imagenes/galeria/parlanterazer_mob.jpg 576w, imagenes/parlanterazer_tab.jpg 990w,  imagenes/galeria/parlanterazer.jpg 1600w"
+                    data-fancybox="galeria"><img src="imagenes/galeria/parlanterazer_mob.jpg" alt="Parlante Razer"></a>
+            </div>
+            <div>
+                <a href="imagenes/galeria/razerheadphone.jpg"
+                    data-srcset="imagenes/galeria/razerheadphone_mob.jpg 576w, imagenes/razerheadphone_tab.jpg 990w, imagenes/galeria/razerheadphone.jpg 1600w"
+                    data-fancybox="galeria"><img src="imagenes/galeria/razerheadphone_,mob.jpg"
+                        alt="Parlante Razer"></a>
+
+                <a href="imagenes/galeria/razerteclado.jpg"
+                    data-srcset="imagenes/galeria/razerteclado_mob.jpg 576w, imagenes/razerteclado.jpg 990w, imagenes/galeria/razerteclado.jpg 1600w"
+                    data-fancybox="galeria"><img src="imagenes/galeria/razerteclado_mob.jpg" alt="Teclado Razer"></a>
+            </div>
+        </figure>
+    </section>
+
+    <section id="trailer">
+        <h2>Trailer gráfica</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/02h_dNl-C-s"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="bajada">
+                <h3>Todotech</h3>
+                <p>¡Suscribite a nuestro Newsletter para ser el primero en enterarte de todos nuestros beneficios!</p>
+                <p>Bicais Martire Joaquín y Martinez Alvarez Sol - DGT4BV - Turno Tarde - 2023</p>
+            </div>
+            <aside>
+                <form action="enviar_formulario.php" enctype="application/x-www-form-urlencoded" method="post">
+                    <div class="control">
+                        <label>Nombre</label>
+                        <input size="10" type="text" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="control">
+                        <label>Mail</label>
+                        <input size="10" type="email" name="mail" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <input type="reset" value="borrar">
+                        <input type="submit" value="enviar">
+                    </div>
+
+                </form>
+            </aside>
+
+            <div class="enlaces">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <picture>
+                        <source media="(max-width:577px)" srcset="imagenes/footer/ig2_mob.png">
+                        <img src="imagenes/footer/ig2_tab.png" alt="Instagram">
+                    </picture>
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <picture>
+                        <source media="(max-width:577px)" srcset="imagenes/footer/twit2_mob.png">
+                        <img src="imagenes/footer/twit2_tab.png" alt="Twitter">
+                    </picture>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <picture>
+                        <source media="(max-width:577px)" srcset="imagenes/footer/fb2_mob.png">
+                        <img src="imagenes/footer/fb2_tab.png" alt="Facebook">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
